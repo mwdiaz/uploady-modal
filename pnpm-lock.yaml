@@ -4,13 +4,18 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+patchedDependencies:
+  '@rpldy/upload-drop-zone':
+    hash: 93afd2419439a3e274b9869541580323d1141889e4f57ca0ee12501640a4334e
+    path: patches/@rpldy__upload-drop-zone.patch
+
 importers:
 
   .:
     dependencies:
       '@rpldy/upload-drop-zone':
         specifier: ^1.9.0
-        version: 1.9.0(react@19.0.0)
+        version: 1.9.0(patch_hash=93afd2419439a3e274b9869541580323d1141889e4f57ca0ee12501640a4334e)(react@19.0.0)
       '@rpldy/uploady':
         specifier: ^1.9.0
         version: 1.9.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -3656,7 +3661,7 @@ snapshots:
     dependencies:
       '@rpldy/shared': 1.9.0
 
-  '@rpldy/upload-drop-zone@1.9.0(react@19.0.0)':
+  '@rpldy/upload-drop-zone@1.9.0(patch_hash=93afd2419439a3e274b9869541580323d1141889e4f57ca0ee12501640a4334e)(react@19.0.0)':
     dependencies:
       '@rpldy/shared-ui': 1.9.0(react@19.0.0)
       html-dir-content: 0.3.2

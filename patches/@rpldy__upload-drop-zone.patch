@@ -1,0 +1,13 @@
+diff --git a/lib/esm/UploadDropZone.js b/lib/esm/UploadDropZone.js
+index 15467c6a1eff290daf61f90b8a7e067b9fd2d12f..6b0fc16c5bba824697993eb7b1a6846d1603bce8 100644
+--- a/lib/esm/UploadDropZone.js
++++ b/lib/esm/UploadDropZone.js
+@@ -6,7 +6,7 @@ import { useUploadyContext, markAsUploadOptionsComponent } from "@rpldy/shared-u
+ const getShouldHandleDrag = (e, shouldHandle) => isEmpty(shouldHandle) || shouldHandle === true || isFunction(shouldHandle) && shouldHandle(e);
+ const isOnTarget = (e, containerElm, allowContains) => {
+   const target = e.type === "dragleave" ? e.relatedTarget : e.target;
+-  return target === containerElm || allowContains && containerElm?.contains(target);
++  return target === containerElm || allowContains && e.currentTarget !== target;
+ };
+ const UploadDropZone = /*#__PURE__*/forwardRef(({
+   className,

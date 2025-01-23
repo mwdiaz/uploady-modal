@@ -49,7 +49,7 @@ export default function ModalUploader(props: ModalOverlayProps) {
               </li>
             ))}
           </ul>
-          <p className="my-3">Drop files on the page, observe that the drop is not handled by Uploady.</p>
+          <p className="my-3">Drop files on the page to add more. Observe the new file(s) added to the list, meaning Uploady handled the drop.</p>
         </Dialog>
       </Modal>
     </ModalOverlay>
