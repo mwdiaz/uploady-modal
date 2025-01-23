@@ -7,7 +7,7 @@ import styles from '@/styles/ModalUploader.module.css';
 import type { ModalOverlayProps } from 'react-aria-components';
 import type { Batch } from '@rpldy/uploady';
 
-export default function ModalUploader(props: ModalUploaderProps) {
+export default function ModalUploader(props: ModalOverlayProps) {
   const { isOpen: isInitiallyOpen } = props;
 
   const [ isOpen, setOpen ] = useState(Boolean(isInitiallyOpen));
@@ -55,5 +55,3 @@ export default function ModalUploader(props: ModalUploaderProps) {
     </ModalOverlay>
   );
 }
-
-export interface ModalUploaderProps extends ModalOverlayProps {}

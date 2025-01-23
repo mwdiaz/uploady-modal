@@ -1,5 +1,5 @@
-import UploadProvider from "./UploadProvider";
-import ModalUploader from "./ModalUploader";
+import UploadProvider from "@/components/UploadProvider";
+import ModalUploader from "@/components/ModalUploader";
 
 export default function Home() {
   return (
