@@ -1,0 +1,7 @@
+.onDragOver .dropIndicator {
+    position: fixed;
+    z-index: 101;
+    border: theme("spacing.2") solid theme("colors.lime.300");
+    inset: 0;
+    transition: border 250ms;
+  }
